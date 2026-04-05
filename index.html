@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ALZARTS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- FLOATING PETALS CONTAINER -->
+  <div id="petals"></div>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#" class="nav-brand">
+      <span>ALZARTS</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#categories">Collections</a></li>
+      <li><a href="#works">Our Works</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#categories" onclick="closeMenu()">Collections</a>
+    <a href="#works" onclick="closeMenu()">Our Works</a>
+    <a href="#testimonials" onclick="closeMenu()">Reviews</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="hero-badge">✦ Curated Gifting Experiences ✦</p>
+    <h1>Gift <em>Something</em> Truly <em>Beautiful</em></h1>
+    <p class="hero-sub">Handcrafted hampers, floral bouquets, personalised keepsakes and custom cakes — every piece made with love.</p>
+    <div class="hero-cta">
+      <a href="#works" class="btn-primary">Explore Our Works</a>
+      <a href="#contact" class="btn-outline">Order Now</a>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider">
+    <div class="divider-line"></div>
+    <span class="divider-icon">✦</span>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <h2>Born from a Love of <em>Thoughtful Gifting</em></h2>
+        <p>At <strong>ALZARTS</strong>, we believe every gift should tell a story. We pour creativity, care and artistry into every single piece we create.</p>
+        <p>From hand-tied floral bouquets to elegantly curated hampers, personalised keepsakes and bespoke celebration cakes — each creation is made to order, just for you.</p>
+        <p>We are a proudly homegrown gifting studio. Whether it's a birthday, anniversary, wedding, or a simple "thinking of you" moment — we make it extraordinary.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <p class="stat-num">100+</p>
+            <p class="stat-label">Happy Customers</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num">100%</p>
+            <p class="stat-label">Custom Made</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num">∞</p>
+            <p class="stat-label">Made with Love</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-img-stack">
+        <!-- Add your images here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider">
+    <div class="divider-line"></div>
+    <span class="divider-icon">✦</span>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <section id="categories">
+    <h2 class="section-title">Our <em>Collections</em></h2>
+    <p class="section-sub">Choose from our handcrafted categories, each made to order</p>
+
+    <div class="categories-grid reveal">
+      <div class="cat-card">
+        <p class="cat-icon">🎂</p>
+        <p class="cat-name">Custom Cakes</p>
+      </div>
+      <div class="cat-card">
+        <p class="cat-icon">🎁</p>
+        <p class="cat-name">Personalised Hampers</p>
+      </div>
+      <div class="cat-card">
+        <p class="cat-icon">💐</p>
+        <p class="cat-name">Bride-to-Be Bouquet</p>
+      </div>
+      <div class="cat-card">
+        <p class="cat-icon">🧺</p>
+        <p class="cat-name">Gift Hampers</p>
+      </div>
+      <div class="cat-card">
+        <p class="cat-icon">🌹</p>
+        <p class="cat-name">Flowers</p>
+      </div>
+      <div class="cat-card">
+        <p class="cat-icon">💍</p>
+        <p class="cat-name">Anniversary Gifts</p>
+      </div>
+      <div class="cat-card trending">
+        <p class="cat-icon">⭐</p>
+        <p class="cat-name">Trending Picks</p>
+      </div>
+      <div class="cat-card">
+        <p class="cat-icon">🎀</p>
+        <p class="cat-name">Special Occasions</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider">
+    <div class="divider-line"></div>
+    <span class="divider-icon">✦</span>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- OUR WORKS -->
+  <section id="works">
+    <h2 class="section-title">Our <em>Works</em></h2>
+    <p class="section-sub">Real gifts, real moments, made with heart</p>
+
+    <div class="works-grid reveal">
+      <div class="work-item">
+        <img src="images/IMG_20260405_003807.jpg" alt="Wedding hamper"/>
+        <div class="work-overlay"><span class="work-tag">Wedding Hamper</span></div>
+      </div>
+      <div class="work-item">
+        <img src="images/IMG_20260405_003753.jpg" alt="Heart box"/>
+        <div class="work-overlay"><span class="work-tag">Heart Gift Box</span></div>
+      </div>
+      <div class="work-item">
+        <img src="images/IMG_20260405_003740.jpg" alt="Luxury bouquet"/>
+        <div class="work-overlay"><span class="work-tag">Luxury Bouquet</span></div>
+      </div>
+      <div class="work-item">
+        <img src="images/IMG_20260405_003727.jpg" alt="Rose bouquet"/>
+        <div class="work-overlay"><span class="work-tag">Rose Bouquet</span></div>
+      </div>
+      <div class="work-item">
+        <img src="images/IMG_20260405_003712.jpg" alt="Gift hamper"/>
+        <div class="work-overlay"><span class="work-tag">Gift Hamper</span></div>
+      </div>
+      <div class="work-item">
+        <img src="images/IMG_20260405_003656.jpg" alt="Birthday box"/>
+        <div class="work-overlay"><span class="work-tag">Birthday Box</span></div>
+      </div>
+      <div class="work-item">
+        <img src="images/IMG_20260405_003644.jpg" alt="Custom cake"/>
+        <div class="work-overlay"><span class="work-tag">Custom Cake</span></div>
+      </div>
+      <div class="work-item">
+        <img src="images/IMG_20260405_003629.jpg" alt="Memory box"/>
+        <div class="work-overlay"><span class="work-tag">Memory Box</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider">
+    <div class="divider-line"></div>
+    <span class="divider-icon">✦</span>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <h2 class="section-title">What Our Customers <em>Say</em></h2>
+    <p class="section-sub">Words that warm our hearts ✦</p>
+
+    <div class="testimonials-row reveal">
+      <div class="testi-card">
+        <p class="testi-stars">★★★★★</p>
+        <p class="testi-text">"The bouquet was absolutely stunning — fresh, beautifully arranged and delivered with such care. My girlfriend was in tears of joy. ALZARTS never disappoints!"</p>
+        <p class="testi-author">— Arjun , Malappuram</p>
+      </div>
+      <div class="testi-card">
+        <p class="testi-stars">★★★★★</p>
+        <p class="testi-text">"Ordered a personalised hamper for our anniversary. The packaging was so premium and every detail was perfect. Will always come back for every occasion!"</p>
+        <p class="testi-author">— Fathima Sherin, Kottakkal</p>
+      </div>
+      <div class="testi-card">
+        <p class="testi-stars">★★★★★</p>
+        <p class="testi-text">"The custom birthday cake was a work of art. Tasted even better than it looked! ALZARTS truly puts love into everything they create."</p>
+        <p class="testi-author">— Nadia S, Tirur</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider">
+    <div class="divider-line"></div>
+    <span class="divider-icon">✦</span>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">Let's Create Something <em>Special</em></h2>
+    <p class="section-sub">Place an order or simply say hello — we'd love to hear from you</p>
+
+    <div class="contact-wrap reveal">
+      <div class="contact-form">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" id="name" placeholder="e.g. Sarah"/>
+        </div>
+        <div class="form-group">
+          <label>Phone / WhatsApp</label>
+          <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX"/>
+        </div>
+        <div class="form-group">
+          <label>Occasion</label>
+          <select id="occasion">
+            <option value="" disabled selected>Select an occasion</option>
+            <option>Birthday</option>
+            <option>Anniversary</option>
+            <option>Wedding / Bride-to-Be</option>
+            <option>Valentine's Day</option>
+            <option>Just Because ✦</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Your Message</label>
+          <textarea id="message" placeholder="Tell us what you have in mind…"></textarea>
+        </div>
+        <button class="btn-primary" onclick="handleOrder()">Send via WhatsApp 🌸</button>
+      </div>
+
+      <div class="contact-info">
+        <h3>Reach Us Directly</h3>
+        <p>We're just a message away. Reach out on WhatsApp for the fastest response, or find us on Instagram for our latest creations.</p>
+
+        <div class="contact-links">
+          <a href="https://wa.me/918129085598" target="_blank" class="contact-link">
+            <div class="contact-link-icon icon-wa">📱</div>
+            <div class="contact-link-text">
+              <p class="contact-link-label">WhatsApp</p>
+              <p class="contact-link-value">+91 81290 85598</p>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/_alzarts._" target="_blank" class="contact-link">
+            <div class="contact-link-icon icon-ig">📸</div>
+            <div class="contact-link-text">
+              <p class="contact-link-label">Instagram</p>
+              <p class="contact-link-value">@_alzarts._</p>
+            </div>
+          </a>
+          <a href="mailto:aleenaksufi@gmail.com" class="contact-link">
+            <div class="contact-link-icon icon-mail">✉️</div>
+            <div class="contact-link-text">
+              <p class="contact-link-label">Email</p>
+              <p class="contact-link-value">aleenaksufi@gmail.com</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-logo">ALZARTS</p>
+    <p class="footer-tagline">Curated Gifting — Crafted with Love ✦</p>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#categories">Collections</a>
+      <a href="#works">Our Works</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="footer-copy">© 2026 ALZARTS. All rights reserved. Made by Ans v.t</p>
+  </footer>
+
+  <!-- SCROLL TO TOP BUTTON -->
+  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
